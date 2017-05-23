@@ -7,10 +7,13 @@
 
 
 <body>
-
+<!-- E-mail wygląda następująco -->
+   <!-- Po lewej stronie wyświetla się wszystko z "name" Po prawej to co wpiszesz lub wybierzesz (value) -->
+   <!-- FOR oraz ID musi byc identyczne najlepiej bez polskich liter -->
+   <!-- Jeżeli nie wyrazimy zgody to po prostu nie dostaniemy informacji na ten temat -->
     <form action="https://formspree.io/5piotrlew@gmail.com" method="POST">
         <label for="imie">Imię:</label><br/>
-        <input type="text" name="imie" id="imie" value="">
+        <input type="text" name="Imie" id="imie" value="">
         <br/>
         <label for="nazwisko">Nazwisko:</label><br/>
         <input type="text" name="Nazwisko" id="nazwisko" value="">
@@ -23,25 +26,25 @@
         <br/><br/>
         <p>Wybierz swoje miasto:</p>
         
-        <input type="radio" name="Miasto" id="krakow" value="krakow">
+        <input type="radio" name="Miasto" id="krakow" value="Kraków">
         <label for="krakow">Kraków</label> <br/>
-        <input type="radio" name="WarszawaName" id="warszawa" value="warszawaWalju">
+        <input type="radio" name="Miasto" id="warszawa" value="Warszawa">
         <label for="warszawa">Warszawa</label> <br/>
-        <input type="radio" name="miasto" id="gdansk" value="gdansk"> 
+        <input type="radio" name="Miasto" id="gdansk" value="Gdańsk"> 
         <label for="gdansk">Gdańsk</label>
 
         <p>Wybierz swoją płeć:</p>
-        <input type="radio" name="gender" id="mezczyzna" value="mezczyzna">
+        <input type="radio" name="płeć" id="mezczyzna" value="Mężczyzna">
         <label for="mezczyzna">Mężczyzna</label> <br/>
-        <input type="radio" name="gender" id="kobieta" value="kobieta"> 
+        <input type="radio" name="płeć" id="kobieta" value="Kobieta"> 
         <label for="kobieta">Kobieta</label> <br/><br/>
         
-        <input type="checkbox" name="zgoda" id="zgoda" value="zgoda">         
+        <input type="checkbox" name="Zgoda" id="zgoda" value="Wyrażona">         
         <label for="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych</label>
         
         <br/><br/>
         <label for="wiadomosc">Wiadomość:</label><br/>
-        <textarea name="wiadomosc" id="wiadomosc" placeholder="Twoja wiadomość"></textarea>
+        <textarea name="Wiadomość" id="wiadomosc" placeholder="Twoja wiadomość"></textarea>
         <br/><br/>
 
         <input type="submit" value="Wyślij">
