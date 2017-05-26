@@ -1,3 +1,5 @@
+
+
 h1{
     color: rebeccapurple;
     margin-bottom: 0;
@@ -9,28 +11,30 @@ em{
 }
 
 #client{
-    margin-top: 15px;
+    
+    padding-bottom: 15px;
+    padding-left: 10px;
     
 }
 
-.ramka{
+.forms{
     border: 2px solid gray;
-
+margin-top: 15px;
+    width: 700px;
 }
 
-#ksiazka{
-    margin-top: 15px;
+#books{
+    
+    padding-left: 10px;
+    padding-bottom: 40px;
 }
 
-.test{  
+.titleforms{  
      
     padding-left: 2px;
     margin-top:-10px;
     margin-left:10px;
-    background-color: white;    
-}
-
-div#ksiazka>p{    
+    background-color: white;  
     width:45px;
 }
 
@@ -38,6 +42,34 @@ div#client>p{
     width: 93px;    
     padding-right: 1px;
     text-align: center;
-    margin-right: 0;   
+    margin-right: 0;  
+    
+}
+div#client label{
+    padding-left: 65px;
+    padding-bottom: 70px;
+}
+
+div#books label#bookchild
+{
+    padding-left: 65px;
+    
+}
+
+input#quantity{
+    width: 250px;
+}
+
+div#books label#quantitychild
+{
+    padding-left: 10px;
+    
+}
+
+#submit
+{
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
 }
 

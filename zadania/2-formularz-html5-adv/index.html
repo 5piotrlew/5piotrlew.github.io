@@ -6,31 +6,27 @@
     <title>Formularze html</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <body>
 
     <h1>A Simple Form</h1>
     <em>Form Fundamentals</em>
     <form action="https://formspree.io/5piotrlew@gmail.com" method="POST" autocomplete="on">
-        <div id="client" class="ramka">
-            <p class="test">Customer info</p>
+        <div id="client" class="forms">
+            <p class="titleforms">Customer info</p>
 
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name"  placeholder="Entere your name" value="" autofocus><br />
+            <input type="text" name="name" id="name"  placeholder="Entere your name" value="" autofocus><br /><br />
 
             <label for="tel">Telephone</label>
             <input type="tel" name="tel" id="tel" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" required/>
-            <br />
+            <br /><br />
             <label for="email">E-mail address:</label>
             <input type="email" name="email" id="email" placeholder="Enter your email address" value="" required>
-
         </div>
+        <div id="books" class="forms">
+            <p class="titleforms">Books</p>
 
-        <div id="ksiazka" class="ramka">
-            <p class="test">Books</p>
-
-
+            <label id="bookchild" for="book"> </label>
             <input type="text" name="book" id="book" list="baza" value=""/>
             <datalist id="baza">
                 <option value="W pustyni i w puszczy">
@@ -40,12 +36,12 @@
                 <option value="Dziady">                
             </datalist>
 
-            <label for="quantity">Quantity (Maximum 5):</label>
+            <label id="quantitychild" for="quantity">Quantity (Maximum 5):</label>
 
             <input type="number" name="quantity" id="quantity" value="" min="1" max="5" />
 
         </div>
-        <input type="submit" value="Submit">
+        <input id="submit" type="submit" value="Submit">
 
 
     </form>
