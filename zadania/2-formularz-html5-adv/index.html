@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularze html</title>
@@ -9,49 +10,57 @@
 
 <body>
 
-<h1 id="h1">A Simple Form</h1>
-<em id="em">Form Fundamentals</em>
+    <h1 id="h1">A Simple Form</h1>
+    <em id="em">Form Fundamentals</em>
 
-<!-- E-mail wygląda następująco -->
-   <!-- Po lewej stronie wyświetla się wszystko z "name" Po prawej to co wpiszesz lub wybierzesz (value) -->
-   <!-- FOR oraz ID musi byc identyczne najlepiej bez polskich liter -->
-   <!-- Jeżeli nie wyrazimy zgody to po prostu nie dostaniemy informacji na ten temat -->
+    <!-- E-mail wygląda następująco -->
+    <!-- Po lewej stronie wyświetla się wszystko z "name" Po prawej to co wpiszesz lub wybierzesz (value) -->
+    <!-- FOR oraz ID musi byc identyczne najlepiej bez polskich liter -->
+    <!-- Jeżeli nie wyrazimy zgody to po prostu nie dostaniemy informacji na ten temat -->
 
     <form action="https://formspree.io/5piotrlew@gmail.com" method="POST">
-     
-     <div id="klient" class="ramka">
-     <p >Customer Info</p>
-      
-      <label for="name">Name:</label>
-        <input type="text" name="name" id="name" value="" placeholder="Entere your name"><br />
-       
-       <label for="telephone">Telephone</label>        
-        <input type="tel" name="telephone" id="telephone" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-        <br />
-        <label for="email">E-mail address:</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email address" value="">
-        
+
+        <div id="klient" class="ramka">
+            <p>Customer Info</p>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="" placeholder="Entere your name" autofocus><br />
+
+            <label for="telephone">Telephone</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+            <br />
+            <label for="email">E-mail address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+
         </div>
-        
+
         <div id="ksiazka" class="ramka">
-        <p >Books</p>
-        
-        
-        <input type="text" name="book" id="book" value="" >
-        
-        <label for="quantity">Quantity (Maximum 5):</label>
-        
-        <input type="number" name="quantity"  min="1" max="5" />
-        
+            <p>Books</p>
+
+
+            <input type="text" name="book" id="book" list="baza" />
+            <datalist id="baza">
+                <option value="W pustyni i w puszczy">
+                <option value="Pan Tadeusz">
+                <option value="Ksiazka3">
+                <option value="Ksiazka 4">
+                <option value="Dziady">
+                
+            </datalist>
+
+            <label for="quantity">Quantity (Maximum 5):</label>
+
+            <input type="number" name="quantity" min="1" max="5" />
+
         </div>
-         <input type="submit" value="Submit">
-        
-        
+        <input type="submit" value="Submit">
+
+
     </form>
 
-  
-   
-   
+
+
+
 
 </body>
 
