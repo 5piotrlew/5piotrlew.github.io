@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularze html</title>
+    <link rel="stylesheet" href="#">
 </head>
 
 
 <body>
+
+<h1 id="h1">A Simple Form</h1>
+<em id="em">Form Fundamentals</em>
+
 <!-- E-mail wygląda następująco -->
    <!-- Po lewej stronie wyświetla się wszystko z "name" Po prawej to co wpiszesz lub wybierzesz (value) -->
    <!-- FOR oraz ID musi byc identyczne najlepiej bez polskich liter -->
@@ -50,6 +55,9 @@
     </form>
     
     <form action="https://formspree.io/5piotrlew@gmail.com" method="POST">
+     
+     <div id="klient">
+     <p class="ramka">Customer Info</p>
       
       <label for="name">Name:</label>
         <input type="text" name="name" id="name" value="" placeholder="Entere your name"><br />
@@ -60,8 +68,9 @@
         <label for="email">E-mail address:</label>
         <input type="email" name="email" id="email" placeholder="Enter your email address" value="">
         
+        </div>
         
-        
+        <div id="ksiazka">
         
         
         
@@ -71,7 +80,7 @@
         
         <input type="number" name="nr_mieszkania"  min="1" max="5" />
         
-        
+        </div>
         
         
         
