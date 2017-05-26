@@ -1,3 +1,48 @@
+h1{
+    color: rebeccapurple;
+    margin-bottom: 0;
+}
+
+em{
+    color: cornflowerblue;
+
+}
+
+#client{
+    margin-top: 15px;
+    
+}
+
 .ramka{
     border: 2px solid gray;
+
 }
+
+#ksiazka{
+    margin-top: 15px;
+}
+
+
+
+.test{ 
+    
+     
+    padding-left: 2px;
+    margin-top:-10px;
+    margin-left:10px;
+    background-color: white;
+    
+}
+
+div#ksiazka>p{
+    
+    width:45px;
+}
+
+div#client>p{
+    width: 93px;
+    
+    padding-right: 100px;
+   
+}
+
