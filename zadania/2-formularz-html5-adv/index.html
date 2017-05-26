@@ -12,8 +12,7 @@
    <!-- FOR oraz ID musi byc identyczne najlepiej bez polskich liter -->
    <!-- Jeżeli nie wyrazimy zgody to po prostu nie dostaniemy informacji na ten temat -->
     <form action="https://formspree.io/5piotrlew@gmail.com" method="POST">
-        <label for="imie">Imię:</label><br/>
-        <input type="text" name="Imię" id="imie" value="">
+        
         <br/>
         <label for="nazwisko">Nazwisko:</label><br/>
         <input type="text" name="Nazwisko" id="nazwisko" value="">
@@ -47,10 +46,32 @@
         <textarea name="Wiadomość" id="wiadomosc" placeholder="Twoja wiadomość"></textarea>
         <br/><br/>
 
-        <input type="submit" value="Wyślij">
+        <input type="submit" value="Wyślij"> <br/><br/><br/><br/><br/><br/>
     </form>
     
     <form action="https://formspree.io/5piotrlew@gmail.com" method="POST">
+      
+      <label for="name">Name:</label>
+        <input type="text" name="name" id="name" value="" placeholder="Entere your name"><br />
+       
+       <label for="telephone">Telephone</label>        
+        <input type="tel" name="telephone" id="telephone" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+        <br />
+        <label for="email">E-mail address:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email address" value="">
+        
+        
+        
+        
+        
+        
+        <label for="books">Quantity (Maximum 5):</label>
+        
+        <label for="quantity">Quantity (Maximum 5):</label>
+        
+        <input type="number" name="nr_mieszkania"  min="1" max="5" />
+        
+        
         
         
         
