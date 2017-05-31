@@ -11,51 +11,37 @@
 
     <h1>A Simple Form</h1>
     <em>Form Fundamentals</em>
+    <!-- Poprawka forumularza customer info -->
     <form action="https://formspree.io/5piotrlew@gmail.com" method="POST" autocomplete="on">
-        <!-- Poniżej Formularz "Customer Info"  -->
-        <div id="client" class="forms">
-            <p class="titleforms">Customer Info</p>
-
+        <fieldset id="client">
+            <legend class="forms">Customer Info</legend>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Entere your name" value="" autofocus><br /><br />
-
             <label for="tel">Telephone:</label>
-            <input type="tel" name="tel" id="tel" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" required/>
-            <br /><br />
-            <!-- Adresy email oddzielamy przecinkiem ! -->
+            <input type="tel" name="tel" id="tel" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" required/><br /><br />
             <label for="email">E-mail address:</label>
             <input type="email" name="email" id="email" placeholder="Enter your email address" value="" required multiple>
-        </div>
-        <!-- Poniżej Formularz "Books" -->
+        </fieldset>
+    </form>
 
-        <div id="books" class="forms">
-            <p class="titleforms">Books</p>
+    <!-- Poniżej poprawka Formularza "Books" -->
 
-            <label id="bookchild" for="book"> </label>
-            <input type="text" name="book" id="book" list="baza" value="" />
-            <datalist id="baza">
+    <fieldset id="books">
+        <legend class="forms">Books</legend>
+        <label id="bookchild" for="book"> </label>
+        <input type="text" name="book" id="book" list="baza" value="" />
+        <datalist id="baza">
                 <option value="W pustyni i w puszczy">
                 <option value="Pan Tadeusz">
                 <option value="Ksiazka3">
                 <option value="Ksiazka 4">
                 <option value="Dziady">                
             </datalist>
-
-            <label id="quantitychild" for="quantity">Quantity (Maximum 5):</label>
-
-            <input type="number" name="quantity" id="quantity" value="" min="1" max="5" />
-
-        </div>
-
-        <input id="submit" type="submit" value="Submit">
-
-
+        <label id="quantitychild" for="quantity">Quantity (Maximum 5):</label>
+        <input type="number" name="quantity" id="quantity" value="" min="1" max="5" /><br /><br />
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
     </form>
-
-
-
-
-
 </body>
 
 </html>
